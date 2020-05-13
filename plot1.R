@@ -15,6 +15,6 @@ data <- read.table("household_power_consumption.txt", header=TRUE, na.strings="?
 data <- data[(data$Date=="1/2/2007" | data$Date=="2/2/2007"),]
 
 #create plot
-png("plot3.png", width=480, height=480)
+png("plot1.png", width=480, height=480)
 hist(data$Global_active_power, xlab="Global Active Power (kilowatts)", ylab="Frequency", main="Global Active Power", col="red")
 dev.off()
